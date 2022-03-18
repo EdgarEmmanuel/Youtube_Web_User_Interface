@@ -14,9 +14,14 @@
 .content_part .left_part_channels .part a {
     flex-basis: 100%;
     margin: 10px 0;
-    font-size: 24px;
+    font-size: 19px;
     text-decoration: none;
     color: black;
+    padding: 10px 10px;
+}
+
+.content_part .left_part_channels .part a:hover{
+    background: rgba(249,249,249);
 }
 
 .content_part .left_part_channels .part a span {

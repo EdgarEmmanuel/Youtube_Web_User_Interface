@@ -4,11 +4,11 @@
 }
 
 .content_part .left_part_channels {
-    flex-basis: 23%;
-    background: green;
+    flex-basis: 20%;
+    /* background: green; */
 }
 
 .content_part .right_part_videos {
-    flex-basis: 74%;
+    flex-basis: 77%;
     background: pink;
 }
