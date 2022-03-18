@@ -1,6 +1,6 @@
 .navbar{
     display:flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     padding: 10px;
     font-family: var(--font);
@@ -98,7 +98,6 @@
     width: 80%;
     padding: 20px;
     border: 1px solid grey;
-    height: 8px;
     outline-width: 0;
 }
 
