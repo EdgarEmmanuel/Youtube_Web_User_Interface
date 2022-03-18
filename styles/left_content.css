@@ -9,6 +9,8 @@
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    width: 100%;
 }
 
 .content_part .left_part_channels .part a {
