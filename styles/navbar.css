@@ -1,3 +1,83 @@
 .navbar{
-    background: red;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
+
+
+
+/* ================= START navbar_left ===================== */
+
+.navbar .navbar_left {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+}
+
+
+.navbar .navbar_left .navbar_left_logo,
+.navbar .navbar_left .navbar_left_button {
+    flex-basis: 50%;
+}
+
+
+
+.navbar .navbar_left .navbar_left_logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar_left .navbar_left_logo .navbar_left_logo_image{
+    flex-basis: 50%;
+}
+
+.navbar .navbar_left .navbar_left_logo .navbar_left_logo_image img {
+    max-width: 100%;
+}
+
+/* ================= END navbar_left ======================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= START navbar_middle ===================== */
+
+.navbar .navbar_right {
+    flex-basis: 40%;
+}
+
+/* ================= END navbar_middle ======================== */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= START navbar_right ===================== */
+
+.navbar .navbar_right {
+    flex-basis: 20%;
+}
+
+/* ================= END navbar_right ======================== */
