@@ -201,7 +201,8 @@
   /* ==================== FOR THE MODAL  ==============*/
 
   /* The Modal (background) */
-.modal {
+.modal ,
+.modalProfile {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -218,7 +219,8 @@
   }
   
   /* Modal Content */
-  .modal-content {
+  .modal-content,
+  .modal_content_profile {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -226,24 +228,10 @@
     width: 80%;
   }
 
-  .modal-content p{
+  .modal-content p,
+  .modal_content_profile p{
       display: inline-block;
       margin: 0 5px 0 5px;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
   }
 
   /* ==================== END FOR THE MODAL =============== */
@@ -262,7 +250,7 @@
   }
 
 
-  .modal_notification_profile{
+.modal_notification_profile{
     margin-left: 10px;
 }
 
