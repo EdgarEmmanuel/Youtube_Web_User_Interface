@@ -241,4 +241,17 @@
 
   /* ==================== END FOR THE MODAL =============== */
 
+  .modal_notification{
+      margin-left: 10px;
+  }
+
+  .modal_notification  button{
+    background: none;
+    margin-top: 15px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+  }
+
 /* ================= END navbar_right ======================== */
