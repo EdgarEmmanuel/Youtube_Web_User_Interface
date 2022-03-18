@@ -225,6 +225,11 @@
     border: 1px solid #888;
     width: 80%;
   }
+
+  .modal-content p{
+      display: inline-block;
+      margin: 0 5px 0 5px;
+  }
   
   /* The Close Button */
   .close {
