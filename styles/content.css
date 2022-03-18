@@ -1,0 +1,14 @@
+.content_part{
+    display: flex;
+    align-items: flex-start;
+}
+
+.content_part .left_part_channels {
+    flex-basis: 23%;
+    background: green;
+}
+
+.content_part .right_part_videos {
+    flex-basis: 74%;
+    background: pink;
+}
