@@ -1,0 +1,29 @@
+.content_part .left_part_channels {
+    padding: 10px 10px;
+    display: flex;
+    font-family: var(--font);
+}
+
+
+.content_part .left_part_channels .part {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content_part .left_part_channels .part a {
+    flex-basis: 100%;
+    margin: 10px 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.content_part .left_part_channels .part a span {
+    display: inline-block;
+    
+}
+
+.content_part .left_part_channels .part a p {
+    display: inline-block;
+}
