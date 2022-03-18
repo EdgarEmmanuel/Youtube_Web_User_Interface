@@ -81,8 +81,44 @@
 
 /* ================= START navbar_middle ===================== */
 
-.navbar .navbar_right {
-    flex-basis: 40%;
+.navbar .navbar_middle {
+    flex-basis: 55%;
+    display: flex;
+    background: pink;
+}
+
+.navbar .navbar_middle .navbar_middle_form{
+    flex-basis: 90%;
+}
+
+.navbar .navbar_middle .navbar_middle_form form {
+    display: flex;
+}
+
+.navbar .navbar_middle .navbar_middle_form form input {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid grey;
+    height: 8px;
+    outline-width: 0;
+}
+
+.navbar .navbar_middle .navbar_middle_form form  input::placeholder{
+    font-size: 20px;
+    font-family: var(--font);
+}
+
+.navbar .navbar_middle .navbar_middle_form form  button {
+    width: 10%;
+    font-size: 24px;
+    border: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+.navbar .navbar_middle .navbar_middle_audio{
+    flex-basis: 10%;
 }
 
 /* ================= END navbar_middle ======================== */
