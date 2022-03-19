@@ -107,6 +107,7 @@
     flex-basis: 100%;
     display:flex;
     flex-wrap: wrap;
+    padding-top: 2px;
 }
 
 .right_part_videos .videos .one_video .content .top ,
@@ -115,5 +116,31 @@
 {
     flex-basis: 100%;
 }
+
+
+.right_part_videos .videos .one_video .content .top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right_part_videos .videos .one_video .content .top .image_min {
+    flex-basis: 20%;
+}
+
+.right_part_videos .videos .one_video .content .top .video_title
+{
+    flex-basis: 80%;
+}
+
+.right_part_videos .videos .one_video .content .top .image_min img {
+    max-width: 3rem;
+    border-radius: 60px;
+}
+
+.right_part_videos .videos .one_video .content .top .video_title h1 {
+    font-size: 17px;
+    text-align: left;
+}
+
 
 /* ============================= END .videos */
