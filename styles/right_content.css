@@ -1,9 +1,15 @@
+.right_part_videos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .right_part_videos .topics_recommandations{
+    flex-basis: 100%;
     background:white;
     display:flex;
     justify-content: space-between;
     padding:20px 10px;
-    overflow-x:scroll;
+    overflow-y:scroll;
     position:sticky;
     top:0;
     z-index:45;
@@ -22,7 +28,7 @@
     background: rgba(249, 249, 249);
     cursor:pointer;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 10px;
     border: 1px solid grey;
     border-radius: 45px;
     opacity:0.7;
