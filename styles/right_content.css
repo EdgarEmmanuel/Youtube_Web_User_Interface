@@ -83,12 +83,13 @@
 .right_part_videos .videos {
     flex-basis: 100%;
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 
 .right_part_videos .videos .one_video{
-    flex-basis: 25%;
+    flex-basis: 15%;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -99,7 +100,7 @@
 }
 
 .right_part_videos .videos .one_video .image img {
-    max-width: 16rem;
+    max-width: 14rem;
     height: auto;
     display: block;
 }
@@ -122,6 +123,7 @@
 .right_part_videos .videos .one_video .content .top {
     display: flex;
     flex-wrap: wrap;
+    padding: 3px;
 }
 
 .right_part_videos .videos .one_video .content .top .image_min {
@@ -134,7 +136,7 @@
 }
 
 .right_part_videos .videos .one_video .content .top .image_min img {
-    max-width: 3rem;
+    max-width: 2rem;
     border-radius: 60px;
 }
 
