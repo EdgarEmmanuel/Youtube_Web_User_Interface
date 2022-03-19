@@ -7,6 +7,36 @@ class ThirdPARTY {
     }
 }
 
+class DateFormatted {
+    static dateSince(date){
+
+        let seconds = Math.floor((new Date() - new Date(date)) / 1000);
+
+        let interval = seconds / 31536000;
+
+        if (interval > 1) {
+            return Math.floor(interval) + " ans";
+        }
+        interval = seconds / 2592000;
+        if (interval > 1) {
+            return Math.floor(interval) + " mois";
+        }
+        interval = seconds / 86400;
+        if (interval > 1) {
+            return Math.floor(interval) + " jours";
+        }
+        interval = seconds / 3600;
+        if (interval > 1) {
+            return Math.floor(interval) + " heures";
+        }
+        interval = seconds / 60;
+        if (interval > 1) {
+            return Math.floor(interval) + " minutes";
+        }
+        return Math.floor(seconds) + " secondes";
+    }
+}
+
 
 class Videos {
     static displayProperlyNumberOfView(numberOfView)
@@ -20,9 +50,11 @@ class Videos {
     static createChildData(oneVideo){
         let div = document.createElement("div");
 
-        let {trailer_image_url, video_number_of_views, youtube_channel_name, video_title, youtuber_logo} = oneVideo;
+        let {trailer_image_url, video_number_of_views, youtube_channel_name, video_title, youtuber_logo, uploaded_at} = oneVideo;
 
         let formattedNumberOfView = this.displayProperlyNumberOfView(video_number_of_views);
+
+        let formattedDate = DateFormatted.dateSince(uploaded_at);
 
         div.innerHTML = `
         
@@ -49,7 +81,7 @@ class Videos {
                         </div>
                         <div class="bottom">
                             <p>
-                                ${formattedNumberOfView} vues . il y'a 3 semaines
+                                ${formattedNumberOfView} vues . il y'a ${formattedDate}
                             </p>
                         </div>
                     </div>
@@ -74,7 +106,6 @@ class Videos {
 
 
         videos.forEach((oneVideo) => {
-            console.log(oneVideo);
             let div = this.createChildData(oneVideo);
 
             PARENT.appendChild(div);
