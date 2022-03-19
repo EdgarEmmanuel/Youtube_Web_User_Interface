@@ -91,6 +91,7 @@
     flex-basis: 25%;
     display: flex;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .right_part_videos .videos .one_video .image {
@@ -153,5 +154,18 @@
     color: grey;
 }
 
+
+
+
+
+.right_part_videos .videos .one_video .content .bottom{
+    text-align: center;
+    padding: 2px;
+}
+
+.right_part_videos .videos .one_video .content .bottom p{
+    font-size: 11px;
+    color: grey;
+}
 
 /* ============================= END .videos */
