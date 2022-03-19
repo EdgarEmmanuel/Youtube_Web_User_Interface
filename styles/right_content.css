@@ -67,3 +67,44 @@
 
 
 /* ========================= END .topics_recommandations ==================== */
+
+
+
+
+
+
+
+
+
+
+
+/* ============================ START .videos */
+
+.right_part_videos .videos {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.right_part_videos .videos .one_video{
+    flex-basis: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right_part_videos .videos .one_video .image {
+    flex-basis: 100%;
+}
+
+.right_part_videos .videos .one_video .image img {
+    max-width: 10rem;
+    height: auto;
+    display: block;
+}
+
+.right_part_videos .videos .one_video .content {
+    flex-basis: 100%;
+}
+
+/* ============================= END .videos */
