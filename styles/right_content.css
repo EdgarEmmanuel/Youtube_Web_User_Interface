@@ -1,5 +1,5 @@
 .right_part_videos .topics_recommandations{
-    background:linear-gradient(to right,#036323,#024d1b);
+    background:white;
     display:flex;
     justify-content: space-between;
     padding:20px 10px;
@@ -14,17 +14,22 @@
 }
 
 .topics_recommandations a{
-    color:white;
+    color:black;
     margin:0px 10px;
     font-weight:bold;
+    font-size: 10px;
     text-transform: uppercase;
+    background: rgba(249, 249, 249);
     cursor:pointer;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 45px;
     opacity:0.7;
     font-family: 'Josefin Sans', sans-serif;
 }
 
 
 .topics_recommandations a:hover{
-    transform:scale(1.2);
-    opacity:1;
+    background: rgb(146, 144, 144);
 }
