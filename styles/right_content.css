@@ -143,4 +143,15 @@
 }
 
 
+.right_part_videos .videos .one_video .content .middle{
+    text-align: center;
+    padding: 2px;
+}
+
+.right_part_videos .videos .one_video .content .middle h1 {
+    font-size: 11px;
+    color: grey;
+}
+
+
 /* ============================= END .videos */
