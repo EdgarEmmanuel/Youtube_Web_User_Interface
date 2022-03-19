@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="styles/content.css"/>
 
     <link rel="stylesheet" type="text/css" href="styles/left_content.css"/>
+
+    <link rel="stylesheet" type="text/css" href="styles/right_content.css"/>
     <!-- END ALL CSS FILES -->
 </head>
 <body>
@@ -293,7 +295,16 @@
         <div class="right_part_videos">
 
             <div class="topics_recommandations">
-                
+                <a (click)="sendData('TrendingWeek')">Trending</a>
+                <a (click)="sendData('TrendingDay')">Top Rated</a>
+                <a (click)="sendData('Action')">Action</a>
+                <a (click)="sendData('Comedy')">Comedy</a>
+                <a (click)="sendData('Mystery')">Mystery</a>
+                <a (click)="sendData('Horror')">Horror</a>
+                <a (click)="sendData('Scifi')">Sci-fi</a>
+                <a (click)="sendData('Animation')">Animation</a>
+                <a (click)="sendData('TV')">TV Movie</a>
+                <a (click)="sendData('Western')">Western</a>
             </div>
 
             <div class="videos">

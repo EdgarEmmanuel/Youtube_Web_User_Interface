@@ -1,0 +1,30 @@
+.right_part_videos .topics_recommandations{
+    background:linear-gradient(to right,#036323,#024d1b);
+    display:flex;
+    justify-content: space-between;
+    padding:20px 10px;
+    overflow-x:scroll;
+    position:sticky;
+    top:0;
+    z-index:45;
+}
+
+.topics_recommandations::-webkit-scrollbar{
+    display:none;
+}
+
+.topics_recommandations a{
+    color:white;
+    margin:0px 10px;
+    font-weight:bold;
+    text-transform: uppercase;
+    cursor:pointer;
+    opacity:0.7;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.topics_recommandations a:hover{
+    transform:scale(1.2);
+    opacity:1;
+}
