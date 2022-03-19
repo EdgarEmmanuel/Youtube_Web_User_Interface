@@ -98,12 +98,21 @@
 }
 
 .right_part_videos .videos .one_video .image img {
-    max-width: 10rem;
+    max-width: 16rem;
     height: auto;
     display: block;
 }
 
 .right_part_videos .videos .one_video .content {
+    flex-basis: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.right_part_videos .videos .one_video .content .top ,
+.right_part_videos .videos .one_video .content .middle,
+.right_part_videos .videos .one_video .content .bottom 
+{
     flex-basis: 100%;
 }
 
