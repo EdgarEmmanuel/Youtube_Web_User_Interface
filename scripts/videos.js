@@ -9,35 +9,47 @@ class ThirdPARTY {
 
 
 class Videos {
+    static displayProperlyNumberOfView(numberOfView)
+    {
+        let result = numberOfView / 1000
+        if( result > 1){
+            return `${result}K`
+        }
+        return result;
+    }
     static createChildData(oneVideo){
         let div = document.createElement("div");
+
+        let {trailer_image_url, video_number_of_views, youtube_channel_name, video_title, youtuber_logo} = oneVideo;
+
+        let formattedNumberOfView = this.displayProperlyNumberOfView(video_number_of_views);
 
         div.innerHTML = `
         
                 <div class="image">
-                        <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720__480.jpg" 
+                        <img src="${trailer_image_url}" 
                         alt="" />
                     </div>
                     <div class="content">
                         <div class="top">
                             <div class="image_min">
-                                <img src="https://s3-us-east-2.amazonaws.com/maryville/wp-content/uploads/2020/01/20133422/software-developer-coding.jpg"
+                                <img src="${youtuber_logo}"
                                  alt="" />
                             </div>
                             <div class="video_title">
                                 <h1>
-                                    Software Engineers Be Like (Pt. 1)
+                                    ${video_title}
                                 </h1>
                             </div>
                         </div>
                         <div class="middle">
                             <h1>
-                                Namanh Kapur
+                                ${youtube_channel_name}
                             </h1>
                         </div>
                         <div class="bottom">
                             <p>
-                                4.4K vues . il y'a 3 semaines
+                                ${formattedNumberOfView} vues . il y'a 3 semaines
                             </p>
                         </div>
                     </div>
@@ -57,6 +69,16 @@ class Videos {
         let response = await ThirdPARTY.fetchData(path);
 
         let videos = response.data;
+
+        const PARENT = this.getParentElement();
+
+
+        videos.forEach((oneVideo) => {
+            console.log(oneVideo);
+            let div = this.createChildData(oneVideo);
+
+            PARENT.appendChild(div);
+        })
     }
 }
 
